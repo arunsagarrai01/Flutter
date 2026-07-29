@@ -67,6 +67,7 @@ void display([int? a, int b = 7, int? c]) {
 
 // a. required named parameters example
 // arguments can be passed in any order, but all values must be provided
+/*
 void main() {
   displayData(value1: "Sagar", value2: "Rai");
 }
@@ -75,3 +76,29 @@ void displayData({required String value1, required String value2}) {
   print(value1);
   print(value2);
 }
+*/
+
+/*
+
+void main() {
+  displayData(value1: "Sagar", value2: true);
+}
+
+void displayData({required String value1, required bool value2}) {
+  print(value1);
+  print(value2);
+}
+*/
+
+void main() {
+  displayName(name1: "Sagar");
+  //displayName(name1: "Sagar", name2: "Rai");
+  // values passed in any order, but all values must be provided
+}
+
+void displayName({String? name1, String? name2}) {
+  print(name1);
+  print(name2);
+}
+
+// combine all parameters types and create a function and execute it // homework
