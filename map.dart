@@ -40,24 +40,38 @@ int multiply(int value1, int value2, [int value3 = 1]) {
 }
 */
 
+/*void main() {
+  display(null, 20, null);
+}
 
+void display([int? a, int? b, int? c]) {
+  print(a);
+  print(b);
+  print(c);
+}*/
 
+/*
+void main() {
+  display(11);
+}
 
+void display([int? a, int b = 7, int? c]) {
+  print(a);
+  print(b);
+  print(c);
+}
+*/
 
+//2. Named Parameters
+// a. required named parameters, b. optional named parameters
 
+// a. required named parameters example
+// arguments can be passed in any order, but all values must be provided
+void main() {
+  displayData(value1: "Sagar", value2: "Rai");
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+void displayData({required String value1, required String value2}) {
+  print(value1);
+  print(value2);
+}
