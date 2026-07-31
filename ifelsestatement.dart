@@ -18,6 +18,7 @@ bool voteFunction(int age) {
 }
 */
 
+/*
 // return String value
 void main() {
   int age = 21; // purpose of 120 is to use else if statement
@@ -34,5 +35,27 @@ String voteFunction(int age) {
     return "You are not born yet.";
   } else {
     return "You can not vote.";
+  }
+}*/
+
+/* 1. Positive or Negative
+
+Create an integer variable number.
+
+If it is greater than 0, print "Positive".
+Otherwise, print "Negative".
+*/
+
+void main() {
+  int number = 0;
+  String result = checkNumber(number);
+  print(result);
+}
+
+String checkNumber(int number) {
+  if (number >= 1) {
+    return "Postive";
+  } else {
+    return "Negative";
   }
 }
