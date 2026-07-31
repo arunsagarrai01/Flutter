@@ -46,6 +46,8 @@ If it is greater than 0, print "Positive".
 Otherwise, print "Negative".
 */
 
+/*
+// Question number one answer
 void main() {
   int number = 0;
   String result = checkNumber(number);
@@ -57,5 +59,28 @@ String checkNumber(int number) {
     return "Postive";
   } else {
     return "Negative";
+  }
+}
+*/
+
+/* 2. Even or Odd
+
+Create an integer variable num.
+
+If the number is divisible by 2, print "Even".
+Otherwise, print "Odd".*/
+
+// Question number two answer
+void main() {
+  int num = 4;
+  String number = checkOddOrEven(num);
+  print(number);
+}
+
+String checkOddOrEven(int num) {
+  if (num % 2 == 0) {
+    return "Even";
+  } else {
+    return "Odd";
   }
 }
