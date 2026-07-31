@@ -5,6 +5,8 @@ void main() {
 
   // const - compile time, cannot reside inside a class
   const double e = 2.7;
+  print(name);
+  print(e);
 }
 
 class My {
