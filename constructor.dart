@@ -29,6 +29,7 @@ void main() {
   s1.display();
 }*/
 
+/*
 // 2. Named Constructor
 class Student {
   String name;
@@ -44,4 +45,61 @@ void main() {
 
   print(s1.name);
   print(s1.age);
+}*/
+
+
+
+
+/*
+// 3. Parameterized Constructor
+class Car {
+  String brand;
+  int year;
+
+  Car(this.brand, this.year);
+}
+
+void main() {
+  Car car = Car("Toyota", 2023);
+
+  print(car.brand);
+  print(car.year);
+}*/
+
+
+
+/*
+
+// 4. Constant Constructor (const)
+
+class Point {
+  final int x;
+  final int y;
+
+  const Point(this.x, this.y);
+}
+
+void main() {
+  const p1 = Point(10, 20);
+  const p2 = Point(10, 20);
+
+  print(identical(p1, p2)); // true
+}*/
+
+
+// 5. Factory Constructor
+class Student {
+  String name;
+  int age;
+
+  Student(this.name, this.age);
+
+  Student.guest() : this("Guest", 18);
+}
+
+void main() {
+  Student s = Student.guest();
+
+  print(s.name);
+  print(s.age);
 }
