@@ -22,8 +22,6 @@ void main() {
   print(result);
 }*/
 
-
-
 /*Question 2
 
 Store the greater number between 10 and 25.*/
@@ -36,4 +34,3 @@ void main() {
 
   print(greater);
 }
-
