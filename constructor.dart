@@ -10,7 +10,7 @@ class Human {
 
 // multiple constructors
 
-
+/*
 //1. Default Constructor
 class Student {
   String name;
@@ -27,4 +27,21 @@ class Student {
 void main() {
   Student s1 = Student("Arun", 22);
   s1.display();
+}*/
+
+// 2. Named Constructor
+class Student {
+  String name;
+  int age;
+
+  Student(this.name, this.age);
+
+  Student.guest() : name = "Guest", age = 0;
+}
+
+void main() {
+  Student s1 = Student.guest();
+
+  print(s1.name);
+  print(s1.age);
 }
