@@ -47,9 +47,6 @@ void main() {
   print(s1.age);
 }*/
 
-
-
-
 /*
 // 3. Parameterized Constructor
 class Car {
@@ -65,8 +62,6 @@ void main() {
   print(car.brand);
   print(car.year);
 }*/
-
-
 
 /*
 
@@ -86,7 +81,7 @@ void main() {
   print(identical(p1, p2)); // true
 }*/
 
-
+/*
 // 5. Factory Constructor
 class Student {
   String name;
@@ -102,4 +97,13 @@ void main() {
 
   print(s.name);
   print(s.age);
+}*/
+
+// 7. Private Constructor
+class Database {
+  Database._();
+}
+
+void main() {
+  // Database db = Database._(); // Only accessible within the same library.
 }
