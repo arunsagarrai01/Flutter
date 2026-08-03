@@ -18,6 +18,8 @@ void main() {
   print(student.name);
 }*/
 
+/*
+
 // How to make setter
 class Student {
   String _name = "Arun";
@@ -37,4 +39,29 @@ void main() {
   student.name = "Sagar";
 
   print(student.name);
+}*/
+
+// Inheritance in dart programming language
+class Animal {
+  void eat() {
+    print("Animal is eating.");
+  }
+
+  void sleep() {
+    print("Animal is sleeping.");
+  }
+}
+
+class Dog extends Animal {
+  void bark() {
+    print("Dog is barking.");
+  }
+}
+
+void main() {
+  Dog dog = Dog();
+
+  dog.eat();
+  dog.sleep();
+  dog.bark();
 }
