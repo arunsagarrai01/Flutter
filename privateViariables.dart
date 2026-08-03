@@ -4,3 +4,15 @@
 // getter le variable read garxa
 // setters le vaiable write garxa
 // how to make getter
+class Student {
+  String _name = "Arun";
+
+  // Getter
+  String get name => _name;
+}
+
+void main() {
+  Student student = Student();
+
+  print(student.name);
+}
